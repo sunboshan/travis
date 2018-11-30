@@ -23,4 +23,3 @@ deploy:
     on:
       repo: sunboshan/travis
       branch: master
-      tags: true

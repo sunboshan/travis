@@ -1,6 +1,3 @@
-## 0.1.6 (November 30, 2018)
-  - Add deploy on tags
-
 ## 0.1.5 (November 30, 2018)
   - Tweak release.mk
 
