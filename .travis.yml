@@ -14,6 +14,7 @@ env:
   - MIX_ENV=test
 before_script: make travis-init
 script: make travis
+before_deploy: make travis-deploy
 deploy:
   - provider: releases
     skip_cleanup: true
