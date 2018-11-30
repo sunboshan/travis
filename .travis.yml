@@ -14,3 +14,11 @@ env:
   - MIX_ENV=test
 before_script: make travis-init
 script: make travis
+deploy:
+  - provider: releases
+    skip_cleanup: true
+    api_key:
+      secure: MZZGz7KuHm0QliD7oxDL4FPNqItNqU/YwtT3CSVzealqpYxILDhXXn8K4ZKKFc2Fprnb8CKA6pwatciFAoI1OT4PVL30LJhC4zo9nqFMeMbzSI3ySVh8kgzmS7eRo7qgF9jIofWAsw4/3q1CMX0eprK6lMMc8fEvFqLxlxCYCse/4EcDNhC8VOiF4IxqUeUBmYh5hZurkZXCAx9XPnOnwQmrOXTJL6tNmxOAHnSBVGyWSLWDRnHnx2WFoGyY3nBZLCE4LblNokoJzZT0TvXq0j6z+MhZ/NXi/wfDDJcxoGGXW0T7SB8GDyyoX0t05sk196kSTiC+1MvOrDBc1EVCfn+Pe2iTW+QiuvCIEEB6u8EmlmKfcGwYxW0tBopk0j0CmeBDsHYxLqO/qTwWsqoP/Qw3JzTp0ylQ6YcekLMFNY8QJ9r3oTY93J+euSQzOCJPGOIs1jMiRPeJ8m1bLnl0anJRjijbGa6wtFmW/IQoAmeD3/MkXTlVnEBmNTx2hqCbhdsIi2mm2X7dq80XD7pOzcuFdEZKfmIi1Lna3p9bKPvdnDpcFvlt/x5Fhq6WU8w4j2jFFp2MaAaUx7d3a5l6BFlF1NU61Mr0VvsGD4yUC0es4HDWhpD17LEwwqmbmWffwWtiFrSHBjUFoHBEfeNaMKsIA/wmIrm26fUIJYr/QtM=
+    on:
+      repo: sunboshan/travis
+      branch: master
