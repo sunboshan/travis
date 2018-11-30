@@ -3,7 +3,7 @@ GIT_BRANCH=$(strip $(shell git symbolic-ref --short HEAD))
 GIT_VERSION="$(strip $(shell git rev-parse --short HEAD))"
 
 release:
-	@git tag $(RELEASE_VERSION)
+	@git tag $(RELEASE_VERSION) || true
 
 bump-version:
 	@echo "Bump version..."
