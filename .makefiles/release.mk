@@ -3,12 +3,7 @@ GIT_BRANCH=$(strip $(shell git symbolic-ref --short HEAD))
 GIT_VERSION="$(strip $(shell git rev-parse --short HEAD))"
 
 release:
-	@git tag -a $(RELEASE_VERSION) -m "Release $(RELEASE_VERSION). Revision is: $(GIT_VERSION)" | true
-
-delete-release:
-	@echo "Delete a release on $(RELEASE_VERSION)"
-	@git tag -d $(RELEASE_VERSION) | true
-	@git push -f -d origin $(RELEASE_VERSION) | true
+	@git tag $(RELEASE_VERSION)
 
 bump-version:
 	@echo "Bump version..."
