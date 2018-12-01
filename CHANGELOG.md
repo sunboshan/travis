@@ -1,3 +1,6 @@
+## 0.2.0 (December 01, 2018)
+  - Fix folder structure
+
 ## 0.1.6 (November 30, 2018)
   - Tweak release.mk
   - Revert "Add deploy on tags (#6)" (#7)
