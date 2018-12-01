@@ -1,3 +1,6 @@
+## 0.2.2 (December 01, 2018)
+  - Make jason optional
+
 ## 0.2.1 (December 01, 2018)
   - Add dep jason
 
