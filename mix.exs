@@ -1,7 +1,7 @@
 defmodule Travis.MixProject do
   use Mix.Project
 
-  @version File.read!("../version") |> String.trim()
+  @version File.read!("version") |> String.trim()
 
   def project do
     [
