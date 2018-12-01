@@ -1,3 +1,6 @@
+## 0.2.1 (December 01, 2018)
+  - Add dep jason
+
 ## 0.2.0 (December 01, 2018)
   - Fix folder structure
 
