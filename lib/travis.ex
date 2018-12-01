@@ -1,9 +1,9 @@
 defmodule Travis do
   def hello do
-    Jason.encode(1)
+    :world
   end
 
   def world do
-    :world
+    Jason.encode(1)
   end
 end
