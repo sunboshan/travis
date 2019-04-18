@@ -20,7 +20,11 @@ test:
 travis-init:
 	@echo "Initialize software required for travis (normally ubuntu software)"
 
-travis: dep build test
+# travis: dep build test
+travis:
+	whoami
+	id
+	groups
 
 travis-deploy: release
 	@echo "Deploy the software by travis"
