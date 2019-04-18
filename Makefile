@@ -22,9 +22,9 @@ travis-init:
 
 # travis: dep build test
 travis:
-	whoami
-	id
-	groups
+	ls -lah /usr/local/opt
+	ls -lah /usr/local/lib
+	ls -lah /usr/local/bin
 
 travis-deploy: release
 	@echo "Deploy the software by travis"
