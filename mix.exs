@@ -23,7 +23,7 @@ defmodule Travis.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:libsecp256k1, "~> 0.1.10"}
+      {:rocksdb, "~> 1.1"}
     ]
   end
 end
