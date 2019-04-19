@@ -51,7 +51,7 @@ travis:
 	erl -eval 'io:format("~p~n",[crypto:info_lib()])' -noshell -s init stop
 	umask
 	ls -lah /usr/local/opt/erlang/lib/erlang/lib/crypto-4.4.2/priv/lib
-	rm /usr/local/opt/erlang/lib/erlang/lib/crypto-4.4.2/priv/lib/crypto.so
+	rm -f /usr/local/opt/erlang/lib/erlang/lib/crypto-4.4.2/priv/lib/crypto.so
 	cp -v priv/crypto.so /usr/local/opt/erlang/lib/erlang/lib/crypto-4.4.2/priv/lib
 	otool -L /usr/local/opt/erlang/lib/erlang/lib/crypto-4.4.2/priv/lib/crypto.so
 	erl -eval 'io:format("~p~n",[crypto:info_lib()])' -noshell -s init stop
