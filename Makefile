@@ -41,7 +41,7 @@ travis:
 	elixir --version
 	mix local.hex --force
 	mix local.rebar --force
-	mix do deps.get, deps.compile
+	ERLANG_ROCKSDB_OPTS="-DWITH_ZSTD=ON" mix do deps.get, deps.compile
 	otool -L deps/rocksdb/priv/liberocksdb.so
 
 travis-deploy: release
