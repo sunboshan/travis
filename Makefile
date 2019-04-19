@@ -50,9 +50,12 @@ travis:
 	otool -L /usr/local/opt/erlang/lib/erlang/lib/crypto-4.4.2/priv/lib/crypto.so
 	erl -eval 'io:format("~p~n",[crypto:info_lib()])' -noshell -s init stop
 	pwd
-	cp -v priv/crypto.so /usr/local/opt/erlang/lib/erlang/lib/crypto-4.4.2/priv/lib/crypto.so
-	otool -L /usr/local/opt/erlang/lib/erlang/lib/crypto-4.4.2/priv/lib/crypto.so
-	erl -eval 'io:format("~p~n",[crypto:info_lib()])' -noshell -s init stop
+	df -h
+	du -sh
+	ls -lah /usr/local/opt/erlang/lib/erlang/lib/crypto-4.4.2/priv/lib
+	# cp -v priv/crypto.so /usr/local/opt/erlang/lib/erlang/lib/crypto-4.4.2/priv/lib/crypto.so
+	# otool -L /usr/local/opt/erlang/lib/erlang/lib/crypto-4.4.2/priv/lib/crypto.so
+	# erl -eval 'io:format("~p~n",[crypto:info_lib()])' -noshell -s init stop
 
 travis-deploy: release
 	@echo "Deploy the software by travis"
