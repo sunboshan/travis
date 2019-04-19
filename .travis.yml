@@ -1,15 +1,17 @@
-language: elixir
-dist: xenial
-elixir:
-  - 1.7.4
-otp_release:
-  - 21.1.1
+matrix:
+  include:
+    # - os: linux
+    #   dist: xenial
+    #   language: elixir
+    #   elixir: 1.8.1
+    #   otp_release: 21.2.4
+    #   services: docker
+    - os: osx
+      osx_image: xcode10.2
 branches:
   only:
     - master
-install:
-  - mix local.hex --force
-  - mix local.rebar --force
+install: echo "install"
 env:
   - MIX_ENV=test
 before_script: make travis-init

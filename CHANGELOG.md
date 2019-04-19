@@ -1,3 +1,6 @@
+## 0.2.3 (April 18, 2019)
+  - Test osx build
+
 ## 0.2.2 (December 01, 2018)
   - Make jason optional
 
